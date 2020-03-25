@@ -26,7 +26,7 @@ def build_mnist_model():
     :return: model
     """
     # Import the Fully Connected network model from fseai_models
-    model = models.FC_model
+    model = models.FCmodel
     input_size = 784
     hidden_size = [128, 64]
     output_size = 10
@@ -74,7 +74,7 @@ def train_mnist(model, trainset):
 
 def test_mnist(model, testset):
     """
-    Test the cnn model for mnist test dataset
+    Test the model for mnist test dataset
     """
     test_loader = DataLoader(dataset=testset, batch_size=64, shuffle=False)
     model.eval()
