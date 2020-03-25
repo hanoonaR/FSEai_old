@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
 """
 Code With FSEai
 """
 import setuptools
 
-with open("README.txt", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
@@ -19,7 +18,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache License, Version 2.0 (Apache-2.0)",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
