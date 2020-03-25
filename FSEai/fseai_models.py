@@ -6,7 +6,7 @@ import torch.nn as nn
 
 class FCmodel(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
-        super(FC_model, self).__init__()
+        super(FCmodel, self).__init__()
 
         # Inputs to hidden layer linear transformation
         self.layer1 = nn.Linear(input_size, hidden_size[0])
@@ -31,7 +31,7 @@ class FCmodel(nn.Module):
 
 class CNNmodel(nn.Module):
     def __init__(self):
-        super(CNN_Model, self).__init__()
+        super(CNNModel, self).__init__()
         self.layer1 = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=5, stride=1, padding=2),
             nn.ReLU(),
