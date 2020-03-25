@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+"""
+Code With FSEai
+"""
+import setuptools
+
+with open("README.txt", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="FSEai",
+    version="0.0.1",
+    author="Hanoona Rasheed",
+    author_email="hanoona@uniqueroboticsedu.com",
+    description="Full Stack Engineering AI course package",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    #url="https://github.com/fse-ai/Book-Version_1.git",
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
+)
