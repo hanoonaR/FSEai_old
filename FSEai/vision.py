@@ -30,7 +30,7 @@ def build_mnist_model():
     input_size = 784
     hidden_size = [128, 64]
     output_size = 10
-    model(input_size, hidden_size, output_size)
+    model = model(input_size, hidden_size, output_size)
     return model
 
 
@@ -42,7 +42,7 @@ def train_mnist(model, trainset):
     # Loss and optimizer
     lossFunction = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=0.003, momentum=0.9)
-    num_epochs = 5
+    num_epochs = 10
     loss_mnist = []
     accuracy_mnist = []
     print("Training ......")
