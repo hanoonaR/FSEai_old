@@ -119,7 +119,7 @@ def visualise_test(samples, dataset, model):
     for i in range(0, 6):
         n = samples[i]
         data = dataset.data[n]
-        image = data.view(1, 1, 28, 28).float()
+        image = data.reshape(-1, 784).float()
         target = dataset.targets[n]
         outputs = model(image)
         _, predicted = torch.max(outputs.data, 1)
