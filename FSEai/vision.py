@@ -41,7 +41,7 @@ def train_mnist(model, trainset):
     train_loader = DataLoader(dataset=trainset, batch_size=64, shuffle=True)
     # Loss and optimizer
     lossFunction = nn.NLLLoss()
-    optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
+    optimizer = optim.SGD(model.parameters(), lr=0.003, momentum=0.9)
     num_epochs = 10
     loss_mnist = []
     accuracy_mnist = []
