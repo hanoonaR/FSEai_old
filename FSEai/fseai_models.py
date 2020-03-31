@@ -1,6 +1,3 @@
-"""
-Deep Learning models
-"""
 import torch.nn as nn
 
 
